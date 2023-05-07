@@ -1,0 +1,30 @@
+<h1>Crear anteproyecto</h1>
+<form class="row g-3">
+  <div class="col-md-4">
+    <label for="validationDefault01" class="form-label">Titulo</label>
+    <input type="text" class="form-control" name="titulo" required [(ngModel)]="proyecto.titulo">
+  </div>
+  <div class="col-md-6">
+    <label for="validationDefault03" class="form-label">Descripción</label>
+    <input type="text" class="form-control" name="descripcion" placeholder="Ingresa una breve descripción" required [(ngModel)]="proyecto.descripcion">
+  </div>
+  <div class="col-md-4">
+    <label for="validationDefault03" class="form-label">Objetivo general</label>
+    <input type="text" class="form-control"  name="objetivo" placeholder="Ingresa el objetivo general" required [(ngModel)]="proyecto.objetivo">
+  </div>
+  <div class="col-md-6">
+    <label for="validationDefaultUsername" class="form-label">Hipotesis</label>
+      <input type="text" class="form-control" name="hipotesis" required [(ngModel)]="proyecto.hipotesis">
+  </div>
+  <div class="col-md-4">
+    <label for="validationDefault02" class="form-label">Planteamiento</label>
+    <textarea class="form-control" rows="3" name="planteamiento" required [(ngModel)]="proyecto.planteamiento"></textarea>
+  </div>
+  <div class="col-md-4">
+    <label for="validationDefault02" class="form-label">Justificación</label>
+    <textarea class="form-control"  rows="3" name="planteamiento" required [(ngModel)]="proyecto.justificacion"></textarea>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" (click)="onSave()">Crear anteproyecto</button>
+  </div>
+</form>

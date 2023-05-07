@@ -1,0 +1,22 @@
+{
+    "proyecto": [
+      { 
+       "titulo": "Messi",
+       "descripcion": "porque es el mejor",
+       "objetivo":"Describir",
+       "hipotesis":"muchas cosas que ganó",
+       "planteamiento":"Su trayectoria fue impecable",
+       "justificacion":"POr que yo quiero",
+       "estado":"Enviado"
+     },
+     { 
+       "titulo": "CR/",
+       "descripcion": "porque es el mejor",
+       "objetivo":"Describir",
+       "hipotesis":"muchas cosas que ganó",
+       "planteamiento":"Su trayectoria fue impecable",
+       "justificacion":"POr que yo quiero",
+       "estado":"Enviado"
+     }
+    ]
+  }
