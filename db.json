@@ -1,22 +1,70 @@
 {
-    "proyecto": [
-      { 
-       "titulo": "Messi",
-       "descripcion": "porque es el mejor",
-       "objetivo":"Describir",
-       "hipotesis":"muchas cosas que ganó",
-       "planteamiento":"Su trayectoria fue impecable",
-       "justificacion":"POr que yo quiero",
-       "estado":"Enviado"
-     },
-     { 
-       "titulo": "CR/",
-       "descripcion": "porque es el mejor",
-       "objetivo":"Describir",
-       "hipotesis":"muchas cosas que ganó",
-       "planteamiento":"Su trayectoria fue impecable",
-       "justificacion":"POr que yo quiero",
-       "estado":"Enviado"
-     }
-    ]
-  }
+  "proyecto": [
+    {
+      "id": 1,
+      "iduser": 1,
+      "titulo": "Luz Dina",
+      "co_titulo": [
+        "ortografia",
+        "ok"
+      ],
+      "descripcion": "Rapidez de la LUZ",
+      "co_descri": [
+        "ok"
+      ],
+      "co_objetivo": [],
+      "co_hipotesis": [
+        "no hay nada",
+        "ukjgkh"
+      ],
+      "co_planteamiento": [],
+      "co_justi": [],
+      "estadotitulo": "Aprobado",
+      "estadodescripcion": "Aprobado",
+      "estadohipotesis": "Pendiente",
+      "estadoplateamiento": "",
+      "estadojustificacion": "",
+      "estadobjetivo": "",
+      "estado": "Corregido"
+    },
+    {
+      "id": 2,
+      "iduser": 2,
+      "titulo": "Messiii",
+      "co_titulo": [
+        "muy corto",
+        null
+      ],
+      "descripcion": "",
+      "co_descri": [],
+      "co_objetivo": [],
+      "co_hipotesis": [],
+      "co_planteamiento": [],
+      "co_justi": [],
+      "estadotitulo": "Aprobado",
+      "estadodescripcion": "Pendiente",
+      "estadohipotesis": "",
+      "estadoplateamiento": "",
+      "estadojustificacion": "",
+      "estadobjetivo": "",
+      "estado": "Corregido"
+    }
+  ],
+  "user": [
+    {
+      "nombre": "miguel angel arroyave ",
+      "email": "m@gmail.com",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "nombre": "jaima",
+      "email": "a@gmail.com",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "id": 3
+    }
+  ]
+}

@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
 })
 export class ProyectoService {
  //solo comunica es decir actualiza los cambios si los hay
- public proyecto$ = new Subject<Proyecto>(); //para uno solo  
+ public proyecto$ = new Subject<Proyecto>(); //para uno solo
  public proyectos$ = new Subject<Proyecto[]>; //para varios
  private token?:string;
  //estos si guardan
@@ -32,10 +32,6 @@ export class ProyectoService {
   return this.proyectos$.asObservable();
 }
 
-get$():Observable<Proyecto>{
-  return this.proyecto$.asObservable();
-}
-
 
 //crud
 
@@ -44,15 +40,14 @@ create(proyecto:Proyecto){
   return this.http.post<Proyecto>(this.url+"proyecto",proyecto)
  .pipe(
     map((res:any)=>{
-      if(res.status==200){
         this.proyecto=new Proyecto()
         this.proyecto.setvalues(res.data)
         this.proyecto$.next(this.proyecto)
-      }
+
     }),
     catchError((err)=>of(err))
    )
- 
+
 }
 
 all():Observable<any>{
@@ -69,8 +64,12 @@ all():Observable<any>{
     }),
     catchError((err)=>of(err))
    )
-  
+
 }
 
+update(proyecto:Proyecto):Observable<any>{
+  return this.http.put<Proyecto>(this.url+"proyecto/"+proyecto.id,proyecto)
+  
+}
 
 }
